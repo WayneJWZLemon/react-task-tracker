@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# React Task Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a clone of [Brad Traversy's Crash Course Video](https://youtu.be/w7ejDZ8SWv8). I am using this repository only for self-learning and to hold my notes.
 
-## Available Scripts
+## What is React?
 
-In the project directory, you can run:
+* React is a library for building user interfaces.
 
-### `npm start`
+* React runs on the client as a SPA (Single Page App), but can be used to build full stack apps by communicating with a server/API (eg. MERN stack).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React is often referred to as a front-end “framework” because it is capable and directly comparable to a framework such as Angular or Vue.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Why would you use React?
 
-### `npm test`
+* Structure the “view” layer of your application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Reusable components with their own state
 
-### `npm run build`
+* JSX - Dynamic markup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Interactive UIs with Virtual Dom
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Performance & testing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Very popular in the industry
 
-### `npm run eject`
+## Working with state
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Components can have “state” which is an object that determines how a component renders and behaves.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* “App” or “global” state refers to state that is available to the entire UI, not just a single component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Prior to React 16.8, we had to use class based components to use state. Now we can use functional components with hooks.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## React Hooks
 
-## Learn More
+React Hooks are functions that let us hook into the React state and lifecycle features from function components.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* useState - Returns a stateful value and a function to update it
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* useEffect - Perform side effects in function components
 
-### Code Splitting
+* useContext, useReducer, useRef - Beyond the scope of this course
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can also create your own custom hooks.
